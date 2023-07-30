@@ -1,0 +1,88 @@
+h2.main-heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: var(--main-color);
+}
+
+h2.main-heading span.bold {
+  font-weight: 700;
+}
+
+.cont {
+  padding: 50px 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cont > main {
+  width: 75%;
+}
+
+.cont > aside {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .cont > main {
+    width: 100%;
+  }
+  .cont > aside {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+.review {
+  margin-bottom: 10px;
+}
+
+svg.star {
+  color: var(--main-color);
+}
+
+.review span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.par {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.5;
+}
+
+section,
+.faq {
+  margin-bottom: 10px;
+}
+
+h3.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: var(--main-color);
+}
+
+.faq .quest {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .sub-page {
+    height: calc(60dvh - 80px);
+  }
+}

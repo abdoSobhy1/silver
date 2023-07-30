@@ -1,0 +1,68 @@
+.container {
+  padding: 50px 15px;
+}
+
+.why-us p {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.why-boxes {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.why-boxes .center {
+  flex: 1.6;
+}
+.why-boxes :is(.left, .right) {
+  flex: 1;
+}
+.why-boxes :is(.left, .right) div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-block: 20px;
+}
+
+.why-boxes :is(.left, .right) div:not(:last-child) {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.why-boxes :is(.left, .right) div h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.why-boxes :is(.left, .right) div h3 span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.why-boxes :is(.left, .right) div svg {
+  font-size: 35px;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.why-boxes :is(.left, .right) div:hover svg {
+  scale: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .why-boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .why-boxes :is(.left, .right) {
+    width: 100%;
+  }
+  .why-boxes .center {
+    flex: 1;
+  }
+}

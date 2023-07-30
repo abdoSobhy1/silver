@@ -1,0 +1,11 @@
+.cars-sec {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.carsCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(95%, 250px), 1fr));
+  gap: 40px;
+}

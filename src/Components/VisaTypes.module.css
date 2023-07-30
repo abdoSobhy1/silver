@@ -1,0 +1,16 @@
+.visaCont {
+  padding: 50px 15px;
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .types {
+    flex-direction: column;
+  }
+}

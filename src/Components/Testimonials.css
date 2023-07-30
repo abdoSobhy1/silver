@@ -1,0 +1,23 @@
+.reviews .slick-track {
+  display: grid;
+  gap: 30px;
+  grid-template-rows: min-content;
+  grid-auto-flow: column;
+}
+
+.reviews .slick-slide {
+  float: none;
+  height: 100%;
+}
+
+.reviews .slick-slide > div {
+  height: 100%;
+}
+
+.reviews .slick-slide > div > div {
+  height: 100%;
+}
+
+.revCont {
+  padding: 50px 15px;
+}

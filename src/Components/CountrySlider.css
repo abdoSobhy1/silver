@@ -1,0 +1,26 @@
+.countries .slick-slider {
+  width: 50%;
+  height: 50px;
+  margin: auto;
+}
+
+.countries .slick-track {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: min-content;
+  grid-auto-flow: column;
+  height: 100%;
+}
+
+.countries .slick-slide {
+  float: none;
+  height: 100%;
+}
+
+.countries .slick-slide > div {
+  height: 100%;
+}
+
+.countries .slick-slide > div > div {
+  height: 100%;
+}
